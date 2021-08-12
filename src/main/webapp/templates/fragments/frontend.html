@@ -34,7 +34,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">All</a></li>
+                        <li><a class="dropdown-item" href="#"><span th:text="#{All}">All</span></a></li>
                     </ul>
                 </li>
             </ul>
@@ -50,6 +50,8 @@
                         <li><a class="dropdown-item" th:href="@{${url}(lang=en)}">🇬🇧 English</a></li>
                         <li><a class="dropdown-item" th:href="@{${url}(lang=fr)}">🇫🇷 Français</a></li>
                         <li><a class="dropdown-item" th:href="@{${url}(lang=vi)}">🇻🇳 Tiếng Việt</a></li>
+                        <li><a class="dropdown-item" th:href="@{${url}(lang=ch)}">🇨🇳 中文</a></li>
+                        <li><a class="dropdown-item" th:href="@{${url}(lang=kr)}">🇰🇷 한국어</a></li>
                     </ul>
                 </div>
                 <button id="login" type="button" class="guest btn btn-primary ms-3 d-none" data-bs-toggle="modal" data-bs-target="#modal-login"><span th:text="#{login}">Login</span></button>
