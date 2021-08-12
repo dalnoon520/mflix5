@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
 public abstract class MyController implements IController {
+
     WebContext ctx;
 
     public void process(HttpServletRequest request, HttpServletResponse response, ServletContext servletContext, ITemplateEngine templateEngine) throws Exception {

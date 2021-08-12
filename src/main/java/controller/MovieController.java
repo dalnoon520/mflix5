@@ -4,14 +4,12 @@ import com.mongodb.client.FindIterable;
 import model.Comment;
 import model.Movie;
 import org.thymeleaf.ITemplateEngine;
-import org.thymeleaf.context.WebContext;
 import service.CommentService;
 import service.MovieService;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 public class MovieController extends MyController {
     @Override

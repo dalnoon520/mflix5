@@ -2,16 +2,12 @@ package controller;
 
 import model.Movie;
 import org.thymeleaf.ITemplateEngine;
-import org.thymeleaf.context.WebContext;
 import service.MovieService;
-import utils.MyCookie;
 
 import javax.servlet.ServletContext;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
-import java.util.Locale;
 
 public class HomeController extends MyController {
 
@@ -21,29 +17,35 @@ public class HomeController extends MyController {
         String value = null;
         String text = null;
         String url = "/?";
+
         if (request.getParameter("by") != null) {
             by = request.getParameter("by").trim();
             url = url + "&by=" + by;
         }
+
         if (request.getParameter("value") != null) {
             value = request.getParameter("value").trim();
             url = url + "&value=" + value;
         }
+
         if (request.getParameter("text") != null) {
             text = request.getParameter("text").trim();
             url = url + "&text=" + text;
         }
+
         ctx.setVariable("url", url);
 
         boolean showCarousel = true;
         boolean showBreadcrumb = true;
-        if (by != null || text != null) {  //Filter
+
+        if (by != null || text != null) {
             showCarousel = false;
+
             if (by != null)
                 ctx.setVariable("breadCrumb", value);
             else if (text != null)
                 ctx.setVariable("breadCrumb", "Search result for: <b>" + text + "</b>");
-        } else { //Home
+        } else {
             showBreadcrumb = false;
         }
         ctx.setVariable("showCarousel", showCarousel);
