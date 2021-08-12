@@ -1,11 +1,11 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyBzKrJj7kexFY8lDEKkwEsWlxuJU3WVP3w",
-    authDomain: "mflix-953c2.firebaseapp.com",
-    projectId: "mflix-953c2",
-    storageBucket: "mflix-953c2.appspot.com",
-    messagingSenderId: "143450838531",
-    appId: "1:143450838531:web:9d3739af494a27f327a036",
-    measurementId: "G-B8JDP73YRZ"
+    apiKey: "AIzaSyCVm_BLcvEBXVzPeb3HWPPJ_DbpH0DLGG4",
+    authDomain: "iflix-2cdcd.firebaseapp.com",
+    projectId: "iflix-2cdcd",
+    storageBucket: "iflix-2cdcd.appspot.com",
+    messagingSenderId: "1028946678244",
+    appId: "1:1028946678244:web:2068c1d27fca14af07b7f1",
+    measurementId: "G-XSQJ49CX9G"
 };
 
 var uiConfig = {
