@@ -8,6 +8,7 @@ var firebaseConfig = {
     measurementId: "G-XSQJ49CX9G"
 };
 
+
 var uiConfig = {
     signInFlow: 'popup',
     signInOptions: [
